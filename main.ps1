@@ -47,7 +47,7 @@ function enumeration{
 function PingDevicesAndPorts{
   param()
   Write-Host "[Scanning for Active Devices and Open ports]" -ForegroundColor Red
-  $Subnet = "10.73.228."
+  $Subnet = ""
   $ActiveDevices = @{}
   $PortsToScan = @(80,8080,443,110,53,21,22,3306,3389)
 
@@ -188,5 +188,6 @@ function PrivledgeEscalation {
   param ()
   continue
 }
+
 
 logo
